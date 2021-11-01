@@ -1,8 +1,9 @@
 import React from "react";
-
+import styled from "styled-components";
+import { SectionLayout } from "../styles";
 const FaqSection = () => {
   return (
-    <div className="faq">
+    <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -15,6 +16,7 @@ const FaqSection = () => {
             iusto.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>What you offer?</h4>
@@ -25,6 +27,7 @@ const FaqSection = () => {
             iusto.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Can I have a free trial?</h4>
@@ -35,6 +38,7 @@ const FaqSection = () => {
             iusto.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>How much it takes time to get my product?</h4>
@@ -45,9 +49,40 @@ const FaqSection = () => {
             iusto.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
-    </div>
+    </Faq>
   );
 };
 
 export default FaqSection;
+
+const Faq = styled(SectionLayout)`
+  display: block;
+  span {
+    display: block;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  .faq-line {
+    background: #cccccc;
+    height: 0.2rem;
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 0.1rem 0rem;
+  }
+  .question {
+    padding: 3rem 0rem;
+    cursor: pointer;
+  }
+  .answer {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
+`;
