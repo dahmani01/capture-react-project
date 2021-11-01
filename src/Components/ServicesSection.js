@@ -6,7 +6,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 import styled from "styled-components";
-import { SectionLayout, Description } from "../styles";
+import { SectionLayout, Description, Image } from "../styles";
 const ServicesSection = () => {
   return (
     <ServicesLayout>
@@ -45,9 +45,9 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <div className="image">
+      <Image>
         <img src={home2} alt="camera" />
-      </div>
+      </Image>
     </ServicesLayout>
   );
 };
