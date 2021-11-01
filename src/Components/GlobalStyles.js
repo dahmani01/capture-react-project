@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -11,15 +10,14 @@ const GlobalStyles = createGlobalStyle`
 
 body{
     background: #1b1b1b;
+    font-family: 'Inter', sans-serif;
 }
 
 h2{
    font-weight: lighter;
    font-size: 4rem;
 }
-h3{
-    color: white;
-}
+
 h4{
     font-weight: bold;
 }
@@ -50,6 +48,7 @@ button{
     background: transparent;
     color : white ; 
     transition: all 0.5s ease ; 
+    font-family: 'Inter', sans-serif;
     &:hover{
         background-color: #23d997;
         color: white;
