@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <StyledNav>
-      <Link to="/" id="logo">
+      <Link to="/capture-react-project/" id="logo">
         Capture
       </Link>
       <ul>
         <li>
-          <Link to="/">1.About Us</Link>
+          <Link to="/capture-react-project/">1.About Us</Link>
         </li>
         <li>
-          <Link to="/work">2.Our Work</Link>
+          <Link to="/capture-react-project/work">2.Our Work</Link>
         </li>
         <li>
-          <Link to="/contactus">3.Contact Us</Link>
+          <Link to="/capture-react-project/contactus">3.Contact Us</Link>
         </li>
       </ul>
     </StyledNav>
