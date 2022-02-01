@@ -12,16 +12,16 @@ function App() {
       <GlobalStyles />
       <Nav />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/capture-react-project/" exact>
           <AboutUs />
         </Route>
-        <Route path="/work" exact>
+        <Route path="/capture-react-project/work" exact>
           <OurWork />
         </Route>
-        <Route path="/work/:id">
+        <Route path="/capture-react-project/work/:id">
           <MovieDetail />
         </Route>
-        <Route path="/contactus">
+        <Route path="/capture-react-project/contactus">
           <ContactUs />
         </Route>
       </Switch>
